@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-Console.WriteLine("Enter age now");
+Console.WriteLine("Welcome to the Retirement Calculator! \n Enter your age: ");
 int myAge = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Enter retirement age in your country");
