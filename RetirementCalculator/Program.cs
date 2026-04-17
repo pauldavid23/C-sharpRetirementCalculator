@@ -4,16 +4,25 @@ Console.WriteLine("Hi, what is your name? ");
 string name = Console.ReadLine();
 Console.WriteLine($"Hello {name}!");
 
-Console.WriteLine("Welcome to the Retirement Calculator! \n Enter your age: ");
-int myAge = int.Parse(Console.ReadLine());
 
-Console.WriteLine("Enter retirement age in your country");
-int retirementAge = int.Parse(Console.ReadLine());
+Console.WriteLine("How much money do you save?");
+int savings = int.Parse(Console.ReadLine());
 
-int yearsToRetirement = retirementAge - myAge;
+if (savings == 0)
+    Console.WriteLine("You won't be able to retire. Keep saving now!");
+else
+{
+    Console.WriteLine("Welcome to the Retirement Calculator! \n Enter your age: ");
+    int myAge = int.Parse(Console.ReadLine());
 
-Console.WriteLine($"You have {yearsToRetirement} years until you can retire.");
+    Console.WriteLine("Enter retirement age in your country");
+    int retirementAge = int.Parse(Console.ReadLine());
 
-Console.ReadKey(true);
+    int yearsToRetirement = retirementAge - myAge;
 
-Console.WriteLine("Press any key to exit...");
+    Console.WriteLine($"You have {yearsToRetirement} years until you can retire.");
+
+    Console.ReadKey(true);
+
+    Console.WriteLine("Press any key to exit...");
+}
