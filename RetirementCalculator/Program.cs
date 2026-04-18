@@ -9,7 +9,10 @@ Console.WriteLine("How much money do you save?");
 int savings = int.Parse(Console.ReadLine());
 
 if (savings == 0)
+{
     Console.WriteLine("You won't be able to retire. Keep saving now!");
+    Console.WriteLine("How much would you like to save?");
+}
 else
 {
     Console.WriteLine("Welcome to the Retirement Calculator! \n Enter your age: ");
