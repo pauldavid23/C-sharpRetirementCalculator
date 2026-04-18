@@ -11,7 +11,22 @@ int savings = int.Parse(Console.ReadLine());
 if (savings == 0)
 {
     Console.WriteLine("You won't be able to retire. Keep saving now!");
-    Console.WriteLine("How much would you like to save?");
+    Console.WriteLine("How much would you like to save every month?");
+    int desiredSavings = int.Parse(Console.ReadLine());
+
+    if (desiredSavings <= 0)
+    {
+        Console.WriteLine("You won't be able to retire. Keep saving now!");
+        Console.ReadKey(true);
+    }
+    else
+    {
+
+        Console.WriteLine($"If you save {desiredSavings} every month, you will have {desiredSavings * 12} in a year.");
+        Console.WriteLine("Keep saving and you will be able to retire in the future!");
+        Console.ReadKey(true);
+
+    } 
 }
 else
 {
