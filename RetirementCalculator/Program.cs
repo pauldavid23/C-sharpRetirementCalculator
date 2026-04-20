@@ -18,6 +18,7 @@ if (savings == 0)
     {
         Console.WriteLine("You won't be able to retire. Keep saving now!");
         Console.ReadKey(true);
+        Console.WriteLine("To retire do these things: \n 1. Increase your savings \n 2. Reduce your expenses \n 3. Invest wisely");
     }
     else
     {
